@@ -54,10 +54,10 @@ const NFTPage = () => {
     <div>
       {isLoading ? (
         <ClipLoader
-        cssOverride={override}
-        color="#57DDC3"
-        size={45}
-      ></ClipLoader>
+          cssOverride={override}
+          color="#57DDC3"
+          size={45}
+        ></ClipLoader>
       ) : (
         <div>
           <Header />

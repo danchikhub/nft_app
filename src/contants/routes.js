@@ -7,8 +7,8 @@ const routes = [
   },
   {
     path: "/nft/:id",
-    component: <NFTPage />
-  }
+    component: <NFTPage />,
+  },
 ];
 
-export default routes
+export default routes;

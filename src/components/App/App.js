@@ -6,17 +6,17 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-        <Routes>
-          {routes.map((route) => {
-            return (
-              <Route
-                key={route.path}
-                path={route.path}
-                element={route.component}
-              />
-            );
-          })}
-        </Routes>
+      <Routes>
+        {routes.map((route) => {
+          return (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={route.component}
+            />
+          );
+        })}
+      </Routes>
     </div>
   );
 }

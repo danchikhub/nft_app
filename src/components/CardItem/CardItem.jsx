@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./CardItem.module.scss";
 
 const CardItem = ({ item }) => {
@@ -11,9 +11,15 @@ const CardItem = ({ item }) => {
     backgroundSize: "cover",
   };
   const handleClick = (id) => {
-    localStorage.setItem('nftItem', JSON.stringify({contract__address: item.asset_contract.address,token_id:item.token_id}));
-    navigate(`/nft/${id}`)
-  }
+    localStorage.setItem(
+      "nftItem",
+      JSON.stringify({
+        contract__address: item.asset_contract.address,
+        token_id: item.token_id,
+      })
+    );
+    navigate(`/nft/${id}`);
+  };
   return (
     <div className={styles.carditem__wrapper}>
       <div style={imgStyle} className={styles.carditem__img__wrapper}></div>
@@ -21,7 +27,12 @@ const CardItem = ({ item }) => {
         <div className={styles.carditem__title}>{name}</div>
       </div>
       <div className={styles.carditem__link__wrapper}>
-        <div onClick={() => handleClick(item.id)} className={styles.carditem__link}>More detailed</div>
+        <div
+          onClick={() => handleClick(item.id)}
+          className={styles.carditem__link}
+        >
+          More detailed
+        </div>
       </div>
     </div>
   );

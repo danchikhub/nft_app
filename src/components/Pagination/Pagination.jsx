@@ -9,7 +9,6 @@ import { setControl } from "../../store/slices/ControlSlice";
 const Pagination = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.cards);
-  console.log(state);
   const paginationHandle = (cursor) => {
     dispatch(
       setControl({
@@ -18,7 +17,6 @@ const Pagination = () => {
     );
     getNFTItemsCursor(cursor)
       .then((res) => {
-        console.log(res);
         dispatch(
           setCards({
             cards: res.assets,
@@ -42,13 +40,20 @@ const Pagination = () => {
           if (state.previous == null) {
             console.log("sorry not data");
           } else {
-            console.log(state);
             paginationHandle(state.previous);
           }
         }}
         className={styles.pagination__link__wrapper}
       >
-        <NavLink className={ state.previous == null ? styles.pagination__link__dis : styles.pagination__link }>Previous</NavLink>
+        <NavLink
+          className={
+            state.previous == null
+              ? styles.pagination__link__dis
+              : styles.pagination__link
+          }
+        >
+          Previous
+        </NavLink>
       </div>
       <div className={styles.line}></div>
       <div
