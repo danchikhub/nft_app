@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__link {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: #57DDC3;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover {
+        color: rgb(4, 17, 29);
+    }
+}
+
+.pagination__link__dis {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: rgb(112, 122, 131);
+    cursor: no-drop;
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover {
+        color: rgb(4, 17, 29);
+    }
+}
+
+
+.line {
+    width: 2px;
+    height: 15px;
+    background-color: #57DDC3;
+    margin: 0 15px 0 15px;
+}

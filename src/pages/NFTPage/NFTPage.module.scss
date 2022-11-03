@@ -1,0 +1,91 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.img__wrapper {
+  min-width: 375px;
+  flex-basis: 40%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.nft__info {
+  margin-left: 25px;
+  padding-top: 15px;
+}
+
+.nft__info__collection {
+  flex-basis: 60%;
+  font-size: 16px;
+}
+.nft__collection__name {
+  font-size: 20px;
+  color: rgb(32, 129, 226);
+}
+
+.nft__name {
+  font-size: 30px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  word-break: break-word;
+  color: rgb(53, 56, 64);
+  margin-bottom: 30px;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.nft__characteristic {
+  color: rgb(53, 56, 64);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.token__item,
+.desc {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+.characteristic__value,
+.token__item,
+.desc {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(112, 122, 131);
+  margin-left: 20px;
+}
+
+.payment__token {
+  margin-right: 5px;
+}
+
+.pagination__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__link {
+  font-size: 18px;
+  color: #57ddc3;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(4, 17, 29);
+  }
+}

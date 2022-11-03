@@ -1,0 +1,28 @@
+.header__wrapper {
+    width: 100%;
+    top: 0px;
+    position: sticky;
+    background-color: #57DDC3;
+}
+
+.header__container {
+    display: flex;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    
+}
+
+.header__link {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header__text {
+    font-size: 14px;
+    color: #fff;
+}
